@@ -267,17 +267,18 @@ class EdifyGenerator(object):
   def PrintPixelExperienceBanner(self, is_plus, android_version, build_id, build_date,
                                   security_patch, device):
     self.Print("----------------------------------------------")
-    if is_plus:
-      self.Print("        PixelExperience (Plus edition)")
-      self.Print("                by jhenrique09")
-    else:
-      self.Print("              PixelExperience")
-      self.Print("              by jhenrique09")
+    self.Print("          ______  ______  __    __  ___      ");
+    self.Print("         / __  / / __  / / /   / / /  /      ");
+    self.Print("        / /_/ / / /_/ / / /   / / /  /       ");
+    self.Print("       /  ___/ /  ___/ / /   / / /  /        ");
+    self.Print("      /  /    /  /    / /___/ / /  /         ");
+    self.Print("     /__/    /__/     \______/ /__/          ");
     self.Print("----------------------------------------------")
-    self.Print(" Android version: %s"%(android_version))
-    self.Print(" Build id: %s"%(build_id))
-    self.Print(" Build date: %s"%(build_date))
-    self.Print(" Security patch: %s"%(security_patch))
+    self.Print(" ROM by: @kostyajrz");
+    self.Print(" Android Version: %s"%(android_version));
+    self.Print(" Build ID: %s"%(build_id));
+    self.Print(" Build Time: %s"%(build_date));
+    self.Print(" Security Patch: %s"%(security_patch));
     self.Print(" Device: %s"%(device))
     self.Print("----------------------------------------------")
 
